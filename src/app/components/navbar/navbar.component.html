@@ -1,0 +1,10 @@
+<mat-toolbar class="my-toolbar" color="warn" style="margin:0;z-index:50;">
+  <!-- <mat-toolbar-row> -->
+   
+    <span><a mat-button routerLink="/"><img src="assets/img/video-camera.png" height="25px"/><strong> MyBoxOffice</strong></a></span>
+    <!-- <button mat-button><mat-icon color="accent">theaters</mat-icon> Now in Cinemas</button> -->
+    <button mat-button [routerLink]="['/showtimes']" routerLinkActive="router-link-active" >Showtimes</button>
+    <button mat-button [routerLink]="['/coming-soon']" routerLinkActive="router-link-active" >Coming Soon</button>
+    <span style="flex: 1 1 auto"></span>
+    <app-search></app-search>
+</mat-toolbar>

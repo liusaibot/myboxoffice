@@ -1,0 +1,11 @@
+<span *ngIf="!isDisplayed" >
+  <button mat-button (click)="toggleSearchBar()"><mat-icon>search</mat-icon></button>
+</span>
+<span class="form-span" *ngIf="isDisplayed" >
+  <mat-form-field class="search-field" height="10px" appearance="fill" autofocus>
+    <!-- <mat-label>Search Movies and showtimes</mat-label> -->
+    <input matInput placeholder="Search Movies...">
+    <mat-icon class="pointer-suffix" matSuffix (click)="toggleSearchBar()">close</mat-icon>
+  </mat-form-field>
+</span>
+

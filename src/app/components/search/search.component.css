@@ -1,0 +1,12 @@
+.pointer-suffix{
+    cursor: pointer;
+}
+
+.form-span{
+    min-width: 350px;
+    max-width: 500px;
+}
+
+.search-field{
+    width: 100%;
+}
